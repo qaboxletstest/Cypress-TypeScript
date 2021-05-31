@@ -1,0 +1,170 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 2,
+    "pending": 1,
+    "failures": 1,
+    "start": "2021-05-31T09:51:27.219Z",
+    "end": "2021-05-31T09:51:45.726Z",
+    "duration": 12471,
+    "testsRegistered": 4,
+    "passPercent": 50,
+    "pendingPercent": 25,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4a145a00-cfd6-4349-8276-6416ded6255f",
+      "title": "",
+      "fullFile": "cypress/integration/TS_01_Login.ts",
+      "file": "cypress/integration/TS_01_Login.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ac88370b-ce15-49c6-b2f1-51704b06a53f",
+          "title": "Login Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login Test Case via JSON - Data Driven",
+              "fullTitle": "Login Test Suite Login Test Case via JSON - Data Driven",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "17feb66b-0751-40b3-9678-8f2cbd9736bd",
+              "parentUUID": "ac88370b-ce15-49c6-b2f1-51704b06a53f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login - Custom Command",
+              "fullTitle": "Login Test Suite Login - Custom Command",
+              "timedOut": null,
+              "duration": 4675,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.login(\"qaboxletstest@gmail.com\", \"123password123\");",
+              "err": {},
+              "uuid": "16fee19e-099a-423f-a935-1aae86486428",
+              "parentUUID": "ac88370b-ce15-49c6-b2f1-51704b06a53f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "File Upload - Plugin",
+              "fullTitle": "Login Test Suite File Upload - Plugin",
+              "timedOut": null,
+              "duration": 7284,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://the-internet.herokuapp.com/upload\");\ncy.get(\"#file-upload\").attachFile(\"loginData.json\");\ncy.get(\"#file-submit\").click();\ncy.get(\"#uploaded-files\").should('contain.text', \"loginData.json\");",
+              "err": {},
+              "uuid": "2908b91f-b4bf-48e0-9bc8-ff80b5192216",
+              "parentUUID": "ac88370b-ce15-49c6-b2f1-51704b06a53f",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "CY Task - TypeScript",
+              "fullTitle": "Login Test Suite CY Task - TypeScript",
+              "timedOut": null,
+              "duration": 512,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.task(\"noparam\").then((txt) => {\n    expect(txt).to.eq(\"OK - This is a failing Test Case\");\n});",
+              "err": {
+                "message": "AssertionError: expected 'OK' to equal 'OK - This is a failing Test Case'",
+                "estack": "AssertionError: expected 'OK' to equal 'OK - This is a failing Test Case'\n    at Context.eval (https://the-internet.herokuapp.com/__cypress/tests?p=cypress\\integration\\TS_01_Login.ts:122:28)",
+                "diff": "- 'OK'\n+ 'OK - This is a failing Test Case'\n"
+              },
+              "uuid": "96f6f362-1d79-443d-8279-123b3d27741d",
+              "parentUUID": "ac88370b-ce15-49c6-b2f1-51704b06a53f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "16fee19e-099a-423f-a935-1aae86486428",
+            "2908b91f-b4bf-48e0-9bc8-ff80b5192216"
+          ],
+          "failures": [
+            "96f6f362-1d79-443d-8279-123b3d27741d"
+          ],
+          "pending": [
+            "17feb66b-0751-40b3-9678-8f2cbd9736bd"
+          ],
+          "skipped": [],
+          "duration": 12471,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
