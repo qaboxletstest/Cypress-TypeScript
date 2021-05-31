@@ -69,7 +69,8 @@
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
   },
   "include": [
-    "**/*.ts"
+    "**/*.ts",
+    "cypress/integration/TS_01_Login.js"
   ],
   "exclude": [
     "node_modules"
