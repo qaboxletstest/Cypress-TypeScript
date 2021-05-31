@@ -1,5 +1,14 @@
 # How to setup Cypress with TypeScript?
 
+In this project we will do the following: -
+1. Create a Cypress Project using npm i cypress
+2. Convert the default support and plugins JS files into respective TS files.
+3. Add TSCONFIG.JSON file to setup our project to work with TypeScript.
+4. Write Test cases using Data-Driven, POM approach and generate Mochawesome HTML report at the end. Also, we would write one test case to cover cy.task.
+5. We would write custom command and enable intellisense for the same.
+
+## So, let's begin
+
 1. Create a Cypress Project
 2. Replace the plugins/index.js file with an index.ts file and change the existing code
 ```
