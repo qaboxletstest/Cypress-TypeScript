@@ -1,7 +1,7 @@
 {
   "name": "Cypress-TypeScript",
   "version": "1.0.0",
-  "description": "",
+  "description": "How to setup Cypress with TypeScript?",
   "main": "index.js",
   "scripts": {
     "clean:reports": "if exist cypress\\reports rmdir /s/q cypress\\reports && mkdir cypress\\reports && mkdir cypress\\reports\\mochareports",
