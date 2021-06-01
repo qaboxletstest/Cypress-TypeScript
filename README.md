@@ -1,7 +1,7 @@
 # How to setup Cypress with TypeScript?
 
 In this project we will do the following: -
-1. Create a Cypress Project using npm i cypress
+1. Create a Cypress Project using npm install cypress typescript mocha cypress-multi-reporters mochawesome mochawesome-merge mochawesome-report-generator
 2. Convert the default support and plugins JS files into respective TS files.
 3. Add TSCONFIG.JSON file to setup our project to work with TypeScript.
 4. Write Test cases using Data-Driven, POM approach and generate Mochawesome HTML report at the end. Also, we would write one test case to cover cy.task.
@@ -9,7 +9,10 @@ In this project we will do the following: -
 
 ## So, let's begin
 
-1. Create a Cypress Project
+1. Create a Cypress Project and add the following dependencies -
+```
+npm install cypress typescript mocha cypress-multi-reporters mochawesome mochawesome-merge mochawesome-report-generator
+```
 2. Replace the plugins/index.js file with an index.ts file and change the existing code
 ```
 module.exports = (on, config) => {
